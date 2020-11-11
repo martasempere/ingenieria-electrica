@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    float a, b, suma, resta, division, resto, producto;
+
+
+    printf("-----------------------\n");
+    printf("--Calculadora \"%cBACO\"--\n", 181);
+    printf("-----------------------\n");
+
+    printf("\nIntroduzca el primer dato : ");
+    scanf(" %f", &a);
+    printf("\nIntroduzca el segundo dato distinto de cero: ");
+    scanf(" %f", &b);
+    printf ("\n");
+
+    while (b==0) {
+        printf(" El segundo dato introducido no es valido");
+        printf("\nIntroduzca el segundo dato distinto de cero: ");
+    scanf(" %f", &b);
+    }
+
+    printf("Los datos introducidos son: %f y %f \n", a, b);
+    printf ("\n");
+
+
+    suma = a + b;
+    resta = a - b;
+    producto = a * b;
+    division = a / b;
+
+
+    printf("El resultado de la suma es: %d \n", (int)suma );
+    printf("El resultado de la resta es: %d \n", (int)resta );
+    printf("El resultado de la multiplicacion  es: %d \n", (int)producto );
+    printf("El resultado de la division es: %f ", division );
+
+    return 0;
+}
