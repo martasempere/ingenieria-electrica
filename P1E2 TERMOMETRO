@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    float c, f, k;
+    printf("--------------------\n");
+    printf("--------------------\n");
+    printf("-----TERMOMETRO-----\n");
+    printf("--------------------\n");
+    printf("--------------------\n\n\n\n\n\n");
+
+    printf("Este termometro transforma la temperatura de grados  Fahrenheit a grados celsius. \n\n\n");
+
+
+    printf("Inserte temperatura en grados Fahrenheit: \n\n\n");
+    scanf("%f", &f);
+
+    k = (f-32) ;
+    c = (k * 0.5555) ;//formula (32 °F − 32) × 5 / 9 = 0 °C
+
+
+
+    printf("La temperatura es %f Celsius \n", c );
+
+
+
+    return 0;
+}
